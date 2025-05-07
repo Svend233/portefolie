@@ -3,46 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Min Portefølje</title>
-    <link rel="stylesheet" href="main css.css">
+    <title>Om Meg</title>
+    <link rel="stylesheet" href="css om meg.css">
 </head>
 <body>
-
     <header>
-        <h1>Min Portefølje</h1>
+        <h1>Om Meg</h1>
         <button class="menu-button" onclick="toggleMenu()">Meny</button>
         <div class="dropdown-menu" id="dropdownMenu">
-            <a href="html om meg.html">Om Meg</a>
+            <a href="portefølgje.html">Hovud side</a>
             <a href="portefølgje.html#projects">produksjon og historie forteling</a>
             <a href="portefølgje.html#projects">teknologiforståing</a>
             <a href="portefølgje.html#projects">produksjon og historieforteling</a>
-            <a href="#contact">Kontakt</a>
+            <a href="portefølgje.html#contact">Kontakt</a>
         </div>
     </header>
-    <section id="welcome">
-<div id="container">
-    <section id="about">
-        <h2 id="velcomen">Velkomen</h2>
-        <p id="welcom">Mit navn er Svend</p>
-        <p>Og her er noen av mine små Prosjekter</p>
-    </section>
-</div>
-</section>
-<section id="basisnett">
-    <section id="projects" >
-            <h3>Cisco Packet Tracer</h3>
-            <p>Her har jeg laget et lite basis nett</p>
-            <img src="basisnett.png" alt="Basis nett" width="500" height="300">
-    </section>
-</section>
-
-    <footer>
-        <p>&copy; 2025 Code Buddies</p>
-    </footer>
-
+    
+    <div id="namn">
+        <h2> Hei mitt navn er Svend og her skal eg forklare lit om meg selv</h2>
+        <img src="bilde av meg.jpg" alt="bilde av meg" width="500" height="400">
+    </div>
 
 
     <script>
+       
         function toggleMenu() {
             var menu = document.getElementById('dropdownMenu');
             if (menu.style.display === 'block') {
@@ -52,6 +36,7 @@
             }
         }
 
+      
         document.addEventListener('click', function(event) {
             var menu = document.getElementById('dropdownMenu');
             var button = document.querySelector('.menu-button');
@@ -60,6 +45,9 @@
             }
         });
     </script>
+    <footer>
+        <p>&copy; 2025 Code Buddies</p>
+    </footer>
 
 </body>
 </html>
